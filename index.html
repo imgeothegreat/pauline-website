@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>For Pau</title>
+  <meta name="description" content="A little corner of the internet, just for Pau.">
+  <meta name="theme-color" content="#2F1A38">
+  <meta property="og:title" content="For Pau">
+  <meta property="og:description" content="A little corner of the internet, just for you.">
+  <meta property="og:image" content="Unknown-11.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21s-7.5-4.6-9.6-9.2C.9 8.3 3 4.5 6.6 4.5c2 0 3.6 1.1 5.4 3 1.8-1.9 3.4-3 5.4-3 3.6 0 5.7 3.8 4.2 7.3C19.5 16.4 12 21 12 21z' fill='%238B4FB8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <!-- Heart icon used everywhere -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.3 3 4.5 6.6 4.5c2 0 3.6 1.1 5.4 3 1.8-1.9 3.4-3 5.4-3 3.6 0 5.7 3.8 4.2 7.3C19.5 16.4 12 21 12 21z" fill="currentColor"/></symbol>
+  </svg>
+
+  <!-- 1. Intro gate -->
+  <div class="gate" id="gate">
+    <div class="gate-bloom" id="gateBloom" aria-hidden="true"></div>
+    <div class="gate-inner">
+      <button class="begin" id="beginBtn">
+        <span class="begin-heart beat"><svg width="34" height="34"><use href="#heart"/></svg></span>
+        <span class="hand begin-text">tap to begin</span>
+        <small class="begin-sound">best with sound on</small>
+      </button>
+      <p class="gate-line" id="gateLine" aria-live="polite" hidden></p>
+      <p class="gate-sub hand" id="gateSub" hidden>this whole page is yours</p>
+      <button class="bud" id="bud" aria-label="Press and hold to help the flower bloom" hidden>
+        <svg class="bud-ring" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="54" class="ring-bg"/>
+          <circle cx="60" cy="60" r="54" class="ring-fill" id="ringFill"/>
+        </svg>
+        <span class="bud-flower" id="budFlower">
+          <svg viewBox="0 0 100 120" width="78" height="94" aria-hidden="true">
+            <path d="M50 118V70" stroke="#7FAF72" stroke-width="5" stroke-linecap="round"/>
+            <path d="M50 98c-15-4-22-14-20-24 10 2 18 10 20 24z" fill="#9CC28F"/>
+            <path d="M50 72c-20-2-26-24-20-46 8 8 14 4 20-8 6 12 12 16 20 8 6 22 0 44-20 46z" fill="#F4C6DA"/>
+            <path d="M50 72c-8-10-8-32 0-54 8 22 8 44 0 54z" fill="#F7A8C8"/>
+          </svg>
+        </span>
+      </button>
+      <p class="gate-hint hand" id="gateHint" hidden>press &amp; hold the flower</p>
+    </div>
+  </div>
+
+  <!-- Drifting petals -->
+  <div class="petals-bg" id="petalsBg" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="brand"><svg width="22" height="22"><use href="#heart"/></svg><span class="hand">for Pau</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#us">Us</a>
+      <a href="#story">Our story</a>
+      <a href="#photos">Photos</a>
+      <a href="#next">What’s next</a>
+      <a href="#garden-sec">Garden</a>
+      <a href="#reasons">Reasons</a>
+      <a href="#letter">Letter</a>
+    </nav>
+    <a href="#letter" class="nav-pill">Letter</a>
+  </header>
+
+  <main>
+    <!-- 2. Hero -->
+    <section class="hero wrap" id="top">
+      <div class="hero-text">
+        <p class="eyebrow">Just because · November 2026</p>
+        <h1 class="name" id="herName">Joana Marie <em>Pauline</em> Occiano</h1>
+        <p class="hero-sub">This little corner of the internet is all yours. Scroll slowly — there are surprises.</p>
+        <div class="hero-btns">
+          <a class="btn btn-dark" href="#letter">Open your letter
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#photos">See us</a>
+        </div>
+      </div>
+      <div class="hero-collage">
+        <figure class="pol h1 float"><span class="tape"></span><img src="Unknown-11.jpg" alt="Us holding hands in a garden under string lights"><figcaption>us, glowing</figcaption></figure>
+        <figure class="pol h2 float2"><span class="tape tape-lilac"></span><img src="Unknown-7.jpg" alt="A selfie of us pouting"><figcaption>pout club</figcaption></figure>
+        <figure class="pol h3 float"><img src="Unknown-3.jpg" alt="Pau blowing a kiss"><figcaption>mwah</figcaption></figure>
+        <button class="hero-heart beat" id="heroHeart" aria-label="Send a heart"><svg width="34" height="34"><use href="#heart"/></svg></button>
+      </div>
+    </section>
+
+    <!-- 3. Counter -->
+    <section class="counter-band" id="us">
+      <div class="wrap counter-inner">
+        <div class="head">
+          <p class="eyebrow light">Live · ticking right now</p>
+          <h2>Us, since <em>November 14</em></h2>
+        </div>
+        <div class="counter">
+          <div><span id="cDays">0</span><small>days</small></div>
+          <div><span id="cHours">00</span><small>hours</small></div>
+          <div><span id="cMins">00</span><small>minutes</small></div>
+          <div class="hot"><span id="cSecs">00</span><small>seconds</small></div>
+        </div>
+        <p class="hand counter-note">…and every one of them has been my favorite.</p>
+      </div>
+    </section>
+
+    <!-- 4. Story -->
+    <section class="section wrap" id="story">
+      <div class="head center reveal">
+        <p class="eyebrow">Chapter by chapter</p>
+        <h2>Our story <em>so far</em></h2>
+      </div>
+      <ol class="story" id="timeline"></ol>
+    </section>
+
+    <!-- 5. Photos -->
+    <section class="section tinted" id="photos">
+      <div class="wrap">
+        <div class="head split reveal">
+          <div>
+            <p class="eyebrow">The camera roll</p>
+            <h2>You, being <em>you</em></h2>
+          </div>
+          <p class="hand muted">tap any photo to see it big</p>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- 5b. To be continued -->
+    <section class="section wrap next" id="next">
+      <div class="head center reveal">
+        <p class="eyebrow">Chapter 05 · Coming soon</p>
+        <h2>To be <em>continued…</em></h2>
+        <p class="next-sub">This page isn’t finished — and neither are we. Every new memory gets a spot right here.</p>
+        <div class="loader">
+          <div class="loader-track"><div class="loader-bar"></div></div>
+          <span class="hand">loading our next chapter…</span>
+        </div>
+      </div>
+      <div class="slots" id="slots"></div>
+    </section>
+
+    <!-- 5c. Flowers -->
+    <section class="section tinted" id="garden-sec">
+      <div class="wrap">
+        <div class="head center reveal">
+          <p class="eyebrow">For when you miss me</p>
+          <h2>A little <em>garden</em> for you</h2>
+        </div>
+        <div class="flower-grid">
+          <div class="fcard reveal">
+            <div class="fcard-head">
+              <h3>She loves me, she loves me not</h3>
+              <p>Pluck the petals. I already know how it ends.</p>
+            </div>
+            <div class="daisy" id="daisy"><span class="daisy-center"></span></div>
+            <p class="hand daisy-text" id="daisyText" aria-live="polite">pluck a petal…</p>
+            <button class="btn btn-ghost btn-small" id="daisyReset" hidden>Grow a new one</button>
+          </div>
+          <div class="fcard reveal">
+            <div class="fcard-head">
+              <h3>Plant a flower</h3>
+              <p>Tap anywhere in the grass. This garden remembers every one.</p>
+            </div>
+            <div class="garden" id="garden" aria-label="Garden. Tap to plant a flower.">
+              <span class="hand garden-hint">tap to plant</span>
+              <svg class="ground" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14Q25 4 50 14T100 14T150 14T200 14T250 14T300 14T350 14T400 14V40H0Z" fill="#CFE3C6"/></svg>
+            </div>
+            <div class="garden-bar">
+              <span class="hand" id="plantCount" aria-live="polite"></span>
+              <span class="garden-btns">
+                <button class="btn btn-ghost btn-small" id="plantBtn">Plant one</button>
+                <button class="linkbtn" id="clearGarden">start over</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Reasons -->
+    <section class="section wrap" id="reasons">
+      <div class="head center reveal">
+        <p class="eyebrow">Open them one by one</p>
+        <h2>Reasons I <em>love</em> you</h2>
+        <p class="hand muted" id="openedLabel">0 of 6 opened</p>
+      </div>
+      <div class="reasons" id="reasonsGrid"></div>
+    </section>
+
+    <!-- 7. Letter -->
+    <section class="section tinted" id="letter">
+      <div class="wrap narrow">
+        <div class="head center reveal">
+          <p class="eyebrow">Sealed with love</p>
+          <h2>A letter <em>for you</em></h2>
+        </div>
+        <button class="envelope" id="envelope" aria-label="Open the letter">
+          <span class="env-flap"></span>
+          <span class="env-front"></span>
+          <span class="env-seal beat"><svg width="30" height="30"><use href="#heart"/></svg></span>
+          <span class="hand env-text">tap to break the seal</span>
+        </button>
+        <article class="letter" id="letterEl" hidden></article>
+      </div>
+    </section>
+
+    <!-- 8. Finale -->
+    <section class="finale" id="finale">
+      <div class="rain-box" id="rainBox" aria-hidden="true"></div>
+      <h2>One more <em>thing…</em></h2>
+      <button class="btn btn-blush beat" id="finaleBtn">Tap me</button>
+      <p class="finale-msg" id="finaleMsg" hidden>I love you, Pau.</p>
+    </section>
+
+    <footer class="hand">made with all my love, just because<br><small>psst — try tapping your name five times</small></footer>
+  </main>
+
+  <!-- Music toggle -->
+  <button class="sound-btn" id="soundBtn" aria-pressed="true" aria-label="Turn sound off" hidden>
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="sound-label">music on</span>
+  </button>
+
+  <!-- Secret note -->
+  <div class="secret" id="secret" role="status" hidden>
+    <span class="hand">you found the secret</span>
+    <p id="secretText"></p>
+    <button class="linkbtn" id="secretClose">close</button>
+  </div>
+
+  <!-- Photo lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <figure class="lb-fig pop" id="lbFig">
+      <img id="lbImg" alt="">
+      <figcaption class="hand" id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+  </div>
+
+  <script src="sound.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
